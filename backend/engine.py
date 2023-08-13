@@ -38,10 +38,12 @@ def get_recommendation(title):
             'popularity': results.iloc[i]['popularity'],
             'vote_count': results.iloc[i]['vote_count'],
             'vote_average': results.iloc[i]['vote_average'],
+            'poster_path': 'https://image.tmdb.org/t/p/w500' + results.iloc[i]['poster_path'],
+            'url': 'https://www.themoviedb.org/movie/' + str(results.iloc[i]['id'])
             })
     
     return recommendation
 
-#print(get_recommendation('The Dark Knight'))
+
     
     
