@@ -7,7 +7,6 @@ df1 = pickle.load(open('./data/movie_list.pkl', 'rb'))
 tfidf_matrix = pickle.load(open('./data/tfidf_matrix.pkl', 'rb'))
 
 def get_recommendation(title):
-    #idx = df1[df1['title'] == title].index[0]
 
     try:
         idx = df1[df1['title'] == title].index[0]
